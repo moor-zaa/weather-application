@@ -21,6 +21,9 @@ jobs:
       # Build the React app in the react-app directory
       - run: npm run build --prefix react-app
 
+      # Remove the existing build directory if it exists
+      - run: rm -rf landing-page/weather/
+
       # Move the build output to the landing-page folder
       - run: mv react-app/build landing-page/weather
 
