@@ -25,7 +25,7 @@ jobs:
       - run: rm -rf landing-page/weather/
 
       # Move the build output to the landing-page folder
-      - run: mv react-app/build landing-page/weather
+      - run: mv react-app/build/ landing-page/weather
 
       # Deploy to Firebase
       - uses: FirebaseExtended/action-hosting-deploy@v0
