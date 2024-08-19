@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci --prefix weather-app # Install dependencies in weather-app
       - run: npm run build --prefix weather-app # Run build in weather-app
       - run: mv weather-app/build landing-page/weather # Move the build output to the landing-page folder
       - uses: FirebaseExtended/action-hosting-deploy@v0
