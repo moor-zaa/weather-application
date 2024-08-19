@@ -11,8 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm run build --prefix weather-app # Run build in weather-app
-      - run: mv weather-app/build landing-page/weather # Move the build output to the landing-page folder
+
+      # Ensure the directory structure is correct
+      - run: ls -al
+
+      # Install dependencies in the weather-app directory
+      - run: npm ci --prefix weather-app
+
+      # Build the React app in the weather-app directory
+      - run: npm run build --prefix weather-app
+
+      # Move the build output to the landing-page folder
+      - run: mv weather-app/build landing-page/weather
+
+      # Deploy to Firebase
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
