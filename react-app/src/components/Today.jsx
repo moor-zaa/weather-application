@@ -39,7 +39,7 @@ const Today = ({ weather, temperature, location }) => {
               <span className="">{weather.main.humidity} %</span>
             </div>
           </div>
-          <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+          <div className="flex items-center justify-center md:justify-start gap-4 my-4">
             <CalendarSvg />
             <span className="">
               Today - {moment(Date.now()).format("dddd")}
