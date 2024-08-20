@@ -35,7 +35,7 @@ const WeatherImage = ({ state, width = 300 }) => {
 
   return (
     <div className="flex justify-center md:justify-start">
-      <img src={imgSrc} alt="weather" width={width} />
+      <img src={imgSrc} alt={state} width={width} />
     </div>
   );
 };

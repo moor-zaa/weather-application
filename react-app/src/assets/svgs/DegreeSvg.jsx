@@ -25,8 +25,8 @@ const DegreeSvg = ({ width = 32 }) => {
           y2="16"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.46" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.46" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_57_2"
@@ -36,8 +36,8 @@ const DegreeSvg = ({ width = 32 }) => {
           y2="3.64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.46" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.46" />
         </linearGradient>
       </defs>
     </svg>

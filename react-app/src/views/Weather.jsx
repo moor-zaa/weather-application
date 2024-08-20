@@ -4,17 +4,13 @@ import Forecast from "../components/Forecast/Forecast";
 import Today from "../components/Today";
 
 const Weather = () => {
-  const [temperature, location, weather, forecast] = useWeather();
+  const [todayData, forecast] = useWeather();
 
   return (
     <div className="container">
       <div className="flex flex-wrap h-full mt-[16px] justify-evenly">
         {/* TODAY WEATHER */}
-        <Today
-          location={location}
-          temperature={temperature}
-          weather={weather}
-        />
+        <Today todayData={todayData} />
 
         {/* WEEK FORECAST */}
         <Forecast forecast={forecast} />

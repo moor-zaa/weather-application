@@ -16,8 +16,8 @@ const LocationSvg = () => {
           y2="23.9405"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.31" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.31" />
         </linearGradient>
       </defs>
     </svg>

@@ -16,7 +16,7 @@ const HumiditySvg = () => {
       <path
         d="M12 18C10.9391 18 9.92172 17.5786 9.17157 16.8284C8.42143 16.0783 8 15.0609 8 14"
         stroke="url(#paint1_linear_82_14)"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <defs>
         <linearGradient
@@ -27,8 +27,8 @@ const HumiditySvg = () => {
           y2="21.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.47" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.47" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_82_14"
@@ -38,8 +38,8 @@ const HumiditySvg = () => {
           y2="18"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.47" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.47" />
         </linearGradient>
       </defs>
     </svg>
